@@ -25,5 +25,7 @@ spagplot <- ggplot(data = data, aes(x=month, y=hr.mean, group=ID, color=type))+
 
 ggsave(
   spagplot, 
-  file = here::here("output/spagplot.png")
+  file = here::here("output/spagplot.png"),
+  width = 15,
+  height = 7
 )
