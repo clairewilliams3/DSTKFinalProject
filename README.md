@@ -18,6 +18,7 @@
 
 `final_report.Rmd`
 
+  - introduces the data
   - makes the spaghetti plot
 
 `Makefile`
