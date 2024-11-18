@@ -10,22 +10,18 @@ here::i_am(
 )
 ```
 
-#Introduction to the data
+# Introduction to the data
 
 This data is a duplicated version of data from the REMBRANDT study, which is a study with 3 sites (Pittsburgh, Nashville, and Chicago) with the aim of better understanding recurrent depression in older adults.
 
 Each patient participates in activity sessions every 8 months for two weeks. They wear a Fitbit during the session, for 4 sessions total.  For the plot I produced, we examined mean heart rate across sessions and indicated when relapses occurred.  
 
-#Here is my spaghetti plot
+# Here is my spaghetti plot
 
 ```{r}
-library(png)
-
-spaghetti_plot <- readPNG(
-  here::here("output/spagplot.png")
-)
-
-print(spaghetti_plot)
+library(knitr)
+path <- here::here("output/spagplot.png")
+include_graphics(path)
 ```
 
 As you can see, patients were in one of three categories: healthy controls, no relapse, or relapsed.  Patients in the no relapse or relapse groups have history of late life depression, and relapses are indicated by red x's.      
