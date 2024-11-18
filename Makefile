@@ -7,4 +7,4 @@ output/spagplot.png: code/01_creating_plots.R
 
 .PHONY: clean
 clean:
-	rm -f final_report.html && rm -f output/*.png
+	rm -f final_report.html
