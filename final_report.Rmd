@@ -16,9 +16,9 @@ This data is a duplicated version of data from the REMBRANDT study, which is a s
 
 Each patient participates in activity sessions every 8 months for two weeks. They wear a Fitbit during the session, for 4 sessions total.  For the plot I produced, we examined mean heart rate across sessions and indicated when relapses occurred.  
 
-# Here is my spaghetti plot
+# Spaghetti plot
 
-```{r}
+```{r, echo = FALSE}
 library(knitr)
 path <- here::here("output/spagplot.png")
 include_graphics(path)
