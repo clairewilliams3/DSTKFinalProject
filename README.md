@@ -24,4 +24,5 @@
 `Makefile`
 
   - contains rules for building the report
+  - contains rule for synchronizing package repository, run make install to do so
   
