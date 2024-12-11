@@ -19,7 +19,7 @@ RENVFILES = renv.lock renv/activate.R renv/settings.json
 
 #rule to build image
 project_image: Dockerfile $(PROJECTFILES) $(RENVFILES)
-	docker build -t project_image .
+	docker build -t clairewilliams3/project_image .
 	touch $@
 
 #rule to build report automatically in our container

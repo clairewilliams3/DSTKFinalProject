@@ -18,10 +18,11 @@ COPY final_report.Rmd .
 RUN mkdir code
 RUN mkdir data
 RUN mkdir output
+RUN mkdir final_report
 COPY code/01_creating_plots.R code/01_creating_plots.R
 COPY code/02_render_report.R code/02_render_report.R
 COPY data/duplicated_data.csv data/duplicated_data.csv
 
 RUN Rscript -e "renv::restore(prompt=FALSE)"
 
-CMD ["make"]
+CMD ["sh", "-c", "make && mv final_report.html final_report"]

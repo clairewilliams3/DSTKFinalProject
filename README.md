@@ -28,8 +28,20 @@
   - contains rule for building the project image run `make project_image` to do so
   - contains rule for building the report automatically in our container
   
+## To build the image
+  
+  - docker image publically available through dockerhub: clairewilliams3/project_image
+  - can use docker pull, docker build, or docker run based on this image to download the image from dockerhub
+  - could also run `make project_image`
+  
 ## To create the report
 
-  - Run `make run_report` in the terminal to automatically build the report in our container
+  - run `make run_report` in the terminal to automatically build the report in our container
   - `final_report.html` will then appear in the `report/` folder
+  
+## NOTE
+
+  - This was built on a Windows system
+  
+  
   
