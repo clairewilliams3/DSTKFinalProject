@@ -23,10 +23,13 @@
 
 `Makefile`
 
-  - contains rules for building the report
+  - contains rule for building the report
   - contains rule for synchronizing package repository, run `make install` to do so
+  - contains rule for building the project image run `make project_image` to do so
+  - contains rule for building the report automatically in our container
   
 ## To create the report
 
-Run `make final_report.html` in the terminal to build the report
+  - Run `make run_report` in the terminal to automatically build the report in our container
+  - `final_report.html` will then appear in the `report/` folder
   
